@@ -25,6 +25,7 @@ gem 'jquery-rails'
 group :test do
   gem 'cucumber-rails'
   gem 'database_cleaner'
+  gem 'rspec-rails'
 end
 
 # To use ActiveModel has_secure_password
@@ -41,3 +42,6 @@ end
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+gem 'inherited_resources'
+gem 'haml'

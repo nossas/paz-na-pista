@@ -1,4 +1,7 @@
 PazNaPista::Application.routes.draw do
+  resources :subscribers, :only => [:new, :create]
+  root :to => 'subscribers#new'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
