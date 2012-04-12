@@ -1,0 +1,19 @@
+!!!
+%html
+  %head
+    %title PazNaPista
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    %link{:href => 'http://fonts.googleapis.com/css?family=Montserrat', :rel => 'stylesheet', :type => 'text/css'}
+    = csrf_meta_tags
+  %body
+    .container.header
+      .row
+        %h1.twelvecol Paz na Pista
+    .container.content= yield
+    .container.footer
+      .row
+        .twelvecol
+          Encontre-nos nas redes sociais:
+          = link_to "Twitter", "#"
+          = link_to "Facebook", "#"

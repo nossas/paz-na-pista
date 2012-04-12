@@ -1,0 +1,98 @@
+/*
+  Welcome to Compass.
+  In this file you should write your main styles. (or centralize your imports)
+  Import this file using the following HTML or equivalent:
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+
+@import compass/reset
+@import compass/css3
+@import compass/utilities
+
++font-face("Gotham Bold", font-files("Gotham-Bold.otf"))
++font-face("Gotham Thin", font-files("Gotham-Book.otf"))
+
+$green: #0b8a42
+$orange: #ed893e
+
+body
+  background: url("bg_green.png")
+  font-family: 'Gotham Thin', sans-serif
+  font-size: 12px
+  letter-spacing: 1px
+
+h1
+  height: 0
+  padding-top: 161px
+  background: url("paz_na_pista.png") no-repeat center
+
+a, h2
+  color: $green
+
+a
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+
+h2
+  text-transform: uppercase
+  font-size: 1.5em
+  margin-bottom: 1em
+  font-family: 'Gotham Bold', sans-serif
+
+p
+  color: gray
+  font-size: 1.1em
+  margin-bottom: 1.5em
+
+
+iframe
+  +border-radius(10px)
+  margin-bottom: 1.5em
+
+form
+  +border-radius(3px)
+  padding: 4px
+  display: inline-block
+  background: rgba(0, 0, 0, 0.1)
+
+label
+  display: none
+
+input[type="text"]
+  +border-radius(3px)
+  border: none
+  padding: 15px
+  margin: 0
+  width: 400px
+
+input[type="submit"]
+  +background-image(linear-gradient(lighten($orange, 10%), $orange))
+  +text-shadow(0 1px 1px black)
+  border: none
+  color: white
+  text-transform: uppercase
+  padding: 15px
+  cursor: pointer
+  margin: 0
+
+h1, .content, .footer
+  text-align: center
+
+.header
+  padding-top: 1.5em
+
+.content
+  background: url("bg_white.png")
+  padding-top: 1.5em
+  padding-bottom: 1.5em
+  margin-top: 1.5em
+  margin-bottom: 1.5em
+
+.footer
+  color: white
+  padding-bottom: 1.5em
+  text-transform: uppercase
+
+a[href="#subscribe"]
+  display: inline-block
+  margin-bottom: 1.5em

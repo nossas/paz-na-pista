@@ -1,8 +1,21 @@
-%h2 Imagine-se vivendo em uma outra realidade.
-= notice
-= form_for @subscriber do |form|
-  - @subscriber.errors.full_messages.each do |msg|
-    = msg
-  = form.label :email
-  = form.text_field :email
-  = form.submit "Cadastrar E-mail"
+.row
+  .twelvecol
+    %h2 Imagine-se vivendo em uma outra realidade.
+.row
+  .threecol
+  .sixcol
+    %p Por um mês na rua, Paz Berti irá sentir na pele o que é estar à margem do Rio de Janeiro. Você poderá acompanhar diariamente por aqui tudo o que acontece durante o mês na rua do PAZ NA PISTA.
+  .threecol
+.row
+  .twelvecol
+    = link_to "Registre-se aqui para acompanhar essa experiência de perto!", "#subscribe"
+.row
+  .twelvecol
+    %iframe{:allowFullScreen => "", :frameborder => "0", :height => "450", :mozallowfullscreen => "", :src => "http://player.vimeo.com/video/38766976?color=ff9933", :webkitAllowFullScreen => "", :width => "800"}
+    = notice
+    = form_for @subscriber do |form|
+      - @subscriber.errors.full_messages.each do |msg|
+        = msg
+      = form.label :email
+      = form.text_field :email, :placeholder => "DIGITE SEU E-MAIL PARA RECEBER MAIS NOVIDADES"
+      = form.submit "Cadastrar E-mail"
