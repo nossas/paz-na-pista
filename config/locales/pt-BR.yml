@@ -96,7 +96,7 @@ pt-BR:
       second: Segundo
       year: Ano
   errors: &errors
-    format: ! '%{attribute} %{message}'
+    format: ! '%{message}'
     messages:
       accepted: deve ser aceito
       blank: não pode ficar em branco
@@ -205,6 +205,12 @@ pt-BR:
   activerecord:
     errors:
       <<: *errors
+      models:
+        subscriber:
+          attributes:
+            email:
+              invalid: "Rapaiz, esse e-mail não está certo não..."
+              blank: "Maluco, sem o seu e-mail vai ficar difícil..."
     attributes:
       subscriber:
         email: "E-mail"

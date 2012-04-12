@@ -8,3 +8,14 @@ Feature: Subscribe for news
     And I fill "E-mail" with "nicolas@engage.is"
     When I press "Cadastrar E-mail"
     Then I should see "Valeu muleque! Entraremos em contato assim que houverem novidades..."
+
+  Scenario: when I fill my email incorrectly
+    Given I'm on the homepage
+    And I fill "E-mail" with "nicolasengage.is"
+    When I press "Cadastrar E-mail"
+    Then I should see "Rapaiz, esse e-mail não está certo não..."
+
+  Scenario: when I leave the email blank
+    Given I'm on the homepage
+    When I press "Cadastrar E-mail"
+    Then I should see "Maluco, sem o seu e-mail vai ficar difícil..."
