@@ -43,6 +43,7 @@ p
   color: gray
   font-size: 1.1em
   margin-bottom: 1.5em
+  line-height: 1.5em
 
 
 iframe
@@ -92,7 +93,29 @@ h1, .content, .footer
   color: white
   padding-bottom: 1.5em
   text-transform: uppercase
+  span
+    display: inline-block
+    vertical-align: middle
 
 a[href="#subscribe"]
   display: inline-block
   margin-bottom: 1.5em
+
+a[href="https://www.facebook.com/PazNaPista"], a[href="https://twitter.com/#!/paznapista"]
+  display: inline-block
+  height: 0
+  padding-top: 32px
+  width: 32px
+  cursor: pointer
+  vertical-align: middle
+  margin: 0
+  +scale(.9)
+  &:hover
+    +scale(1)
+
+a[href="https://www.facebook.com/PazNaPista"]
+  background: url("http://icons.iconarchive.com/icons/yootheme/social-bookmark/32/social-facebook-box-white-icon.png")
+
+a[href="https://twitter.com/#!/paznapista"]
+  margin-left: 15px
+  background: url("http://icons.iconarchive.com/icons/yootheme/social-bookmark/32/social-twitter-box-white-icon.png")
