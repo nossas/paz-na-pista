@@ -25,7 +25,10 @@
     .container.content= yield
     .container.footer
       .row
-        .twelvecol
+        .sixcol
+          %span Uma realização
+          = link_to "Meu Rio", "http://meurio.org.br/"
+        .sixcol.last
           %span Encontre-nos nas redes sociais:
           = link_to "Twitter", "https://twitter.com/#!/meu_rio"
           = link_to "Facebook", "https://www.facebook.com/meurio"
