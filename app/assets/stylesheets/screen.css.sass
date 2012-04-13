@@ -73,7 +73,7 @@ input[type="text"]
 
 input[type="submit"]
   +background-image(linear-gradient(lighten($orange, 10%), $orange))
-  +text-shadow(0 1px 1px black)
+  +text-shadow(1px 1px 1px black)
   border: none
   color: white
   text-transform: uppercase
@@ -81,6 +81,8 @@ input[type="submit"]
   cursor: pointer
   margin: 0
   font-size: 1.5em
+  &:hover
+    +box-shadow($orange 0 0 5px)
 
 h1, .content, .footer
   text-align: center
