@@ -19,3 +19,10 @@ Feature: Subscribe for news
     Given I'm on the homepage
     When I press "Cadastrar E-mail"
     Then I should see "Maluco, sem o seu e-mail vai ficar difícil..."
+  
+  Scenario: when I fill an existing email
+    Given I'm on the homepage
+    And there is a subscriber nicolas@engage.com
+    And I fill "E-mail" with "nicolas@engage.com"
+    When I press "Cadastrar E-mail"
+    Then I should see "Aí! Você já está cadastrado, mas não deixe de compartilhar..."

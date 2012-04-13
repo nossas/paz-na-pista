@@ -211,6 +211,7 @@ pt-BR:
             email:
               invalid: "Rapaiz, esse e-mail não está certo não..."
               blank: "Maluco, sem o seu e-mail vai ficar difícil..."
+              taken: "Aí! Você já está cadastrado, mas não deixe de compartilhar..."
     attributes:
       subscriber:
         email: "E-mail"

@@ -66,9 +66,10 @@ label
 input[type="text"]
   +border-radius(3px)
   border: none
-  padding: 15px
+  padding: 10px
   margin: 0
-  width: 400px
+  width: 500px
+  font-size: 1.5em
 
 input[type="submit"]
   +background-image(linear-gradient(lighten($orange, 10%), $orange))
@@ -76,22 +77,23 @@ input[type="submit"]
   border: none
   color: white
   text-transform: uppercase
-  padding: 15px
+  padding: 10px
   cursor: pointer
   margin: 0
+  font-size: 1.5em
 
 h1, .content, .footer
   text-align: center
 
 .header
   padding-top: 1.5em
+  padding-bottom: 1.5em
 
 .content
-  +box-shadow(black 0 0 5px inset)
+  +box-shadow(black 0 0 10px inset)
   background: url("bg_white.png")
   padding-top: 1.5em
   padding-bottom: 1.5em
-  margin-top: 1.5em
   margin-bottom: 1.5em
 
 .footer
@@ -101,6 +103,17 @@ h1, .content, .footer
   span
     display: inline-block
     vertical-align: middle
+
+.notice
+  color: $green
+  margin-bottom: 5px
+
+.errors
+  color: red
+  margin-bottom: 5px
+
+.field_with_errors
+  display: inline
 
 a[href="#subscribe"]
   display: inline-block

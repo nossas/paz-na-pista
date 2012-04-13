@@ -8,10 +8,11 @@
   .threecol
 .row
   .twelvecol
-    = notice
-    = form_for @subscriber do |form|
+    .notice= notice
+    .errors
       - @subscriber.errors.full_messages.each do |msg|
-        = msg
+        .error= msg
+    = form_for @subscriber do |form|
       = form.label :email
       = form.text_field :email, :placeholder => "DIGITE SEU E-MAIL PARA RECEBER MAIS NOVIDADES"
       = form.submit "Cadastrar E-mail"
