@@ -8,7 +8,7 @@
         .error= msg
     = form_for @subscriber do |form|
       = form.label :email
-      = form.text_field :email, :placeholder => "DIGITE SEU E-MAIL PARA RECEBER MAIS NOVIDADES", :size => "55"
+      = form.text_field :email, :placeholder => "DIGITE SEU E-MAIL PARA RECEBER MAIS NOVIDADES"
       = form.submit "Cadastrar E-mail"
     .fb-like{"data-href" => "http://paznapista.com.br/", "data-send" => "false", "data-show-faces" => "false", "data-layout" => "button_count"}
     %a{:href => "https://twitter.com/share", :class => "twitter-share-button", "data-via" => "meu_rio", "data-lang" => "pt", "data-hashtags" => "paznapista"} Tweetar
