@@ -115,9 +115,13 @@ h1
 .field_with_errors
   display: inline
 
-.fb-like, .tweet
+.share
   float: left
-  margin-right: 10px
+  position: relative
+  width: 80px
+  height: 70px
+  .fb-like, iframe
+    position: absolute
 
 a[href="#subscribe"]
   display: inline-block
