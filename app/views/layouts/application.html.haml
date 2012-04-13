@@ -5,6 +5,15 @@
     = stylesheet_link_tag    "application", :media => "all"
     = javascript_include_tag "application"
     %link{:href => 'http://fonts.googleapis.com/css?family=Montserrat', :rel => 'stylesheet', :type => 'text/css'}
+    %link{:rel => "icon", :href => image_path("favicon.png"), :type => "image/x-icon"}
+    %meta{:property => "og:title", :content => "Paz na Pista"}
+    %meta{:property => "og:description", :content => "Imagine-se vivendo em uma outra realidade. Por um mês na rua, Paz Berti irá sentir na pele o que é estar à margem do Rio de Janeiro. Você poderá acompanhar diariamente por aqui tudo o que acontece durante o mês na rua do PAZ NA PISTA."}
+    %meta{:property => "og:image", :content => "http://b.vimeocdn.com/ts/276/529/276529379_640.jpg"}
+    %meta{:property => "og:video", :content => "http://vimeo.com/moogaloop.swf?clip_id=40026891"}
+    %meta{:property => "og:video:secure_url", :content => "https://vimeo.com/moogaloop.swf?clip_id=40026891"}
+    %meta{:property => "og:video:type", :content => "application/x-shockwave-flash"}
+    %meta{:property => "og:video:width", :content => "640"}
+    %meta{:property => "og:video:height", :content => "360"}
     = csrf_meta_tags
   %body
     .container.header

@@ -4,16 +4,8 @@
 .row
   .threecol
   .sixcol
-    %p Imagine-se vivendo em uma outra realidade. Por um mês na rua, Paz Berti irá sentir na pele o que é estar à margem do Rio de Janeiro. Você poderá acompanhar diariamente por aqui tudo o que acontece durante o mês na rua do PAZ NA PISTA. Registre-se aqui para acompanhar essa experiência de perto!
+    %p Imagine-se vivendo em uma outra realidade. Por um mês na rua, Paz Berti irá sentir na pele o que é estar à margem do Rio de Janeiro. Você poderá acompanhar diariamente por aqui tudo o que acontece durante o mês na rua do PAZ NA PISTA.
   .threecol
-.row
-  .twelvecol
-    = link_to "Registre-se aqui para acompanhar essa experiência de perto!", "#subscribe"
-.row
-  .twocol
-  .eightcol
-    %iframe{:allowFullScreen => "", :frameborder => "0", :mozallowfullscreen => "", :src => "http://player.vimeo.com/video/40026891?title=0&amp;byline=0&amp;portrait=0", :webkitAllowFullScreen => ""}
-  .twocol
 .row
   .twelvecol
     = notice
@@ -23,3 +15,8 @@
       = form.label :email
       = form.text_field :email, :placeholder => "DIGITE SEU E-MAIL PARA RECEBER MAIS NOVIDADES"
       = form.submit "Cadastrar E-mail"
+.row
+  .twocol
+  .eightcol
+    %iframe{:allowFullScreen => "", :frameborder => "0", :mozallowfullscreen => "", :src => "http://player.vimeo.com/video/40026891?title=0&amp;byline=0&amp;portrait=0", :webkitAllowFullScreen => ""}
+  .twocol
