@@ -45,12 +45,10 @@ p
   line-height: 1.5em
 
 
-iframe
+iframe.video
+  +border-radius(10px)
   width: 100%
-  height: 310px
-
-form
-  text-align: center
+  height: 360px
 
 label
   display: none
@@ -59,8 +57,8 @@ input[type="email"]
   +border-radius(3px)
   +box-shadow(gray 0 0 5px inset)
   border: none
-  padding: 2%
-  width: 66%
+  padding: 10px
+  width: 200px
   margin: 0
   margin-bottom: 1em
   font-size: 1.1em
@@ -73,7 +71,7 @@ input[type="submit"]
   color: darken($orange, 40%)
   font-weight: bold
   text-transform: uppercase
-  padding: 2%
+  padding: 10px
   cursor: pointer
   margin: 0
   margin-bottom: 1em
@@ -81,15 +79,16 @@ input[type="submit"]
   &:hover
     +box-shadow(0 1px rgba(255, 255, 255, .5) inset, 0 1px white, $orange 0 0 10px)
 
-h1
-  text-align: center
-
 .header
   padding-top: 1.5em
   padding-bottom: 1.5em
-  text-align: center
   h1
     display: none
+  img
+    width: 250px
+  .fb-like, .tweet
+    float: right
+    margin-left: 10px
 
 .content
   +box-shadow(black 0 0 10px inset)
@@ -105,6 +104,8 @@ h1
   span
     display: inline-block
     vertical-align: middle
+  .last
+    text-align: right
 
 .notice
   color: $green
@@ -116,11 +117,6 @@ h1
 
 .field_with_errors
   display: inline
-
-.fb-like, .tweet
-  float: left
-  margin-right: 10px
-  margin-bottom: 1em
 
 a[href="#subscribe"]
   display: inline-block
@@ -147,3 +143,10 @@ a[href="https://twitter.com/#!/meu_rio"]
 
 a[href="http://meurio.org.br/"]
   background: url("meurio.png")
+
+span.highlight
+  color: $green
+  display: inline-block
+  margin-bottom: 1em
+  font-family: 'Gotham Bold', sans-serif
+  font-size: 1.1em
