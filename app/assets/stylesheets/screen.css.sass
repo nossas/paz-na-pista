@@ -81,7 +81,6 @@ input[type="submit"]
 
 .header
   padding-top: 1.5em
-  padding-bottom: 1.5em
   h1
     display: none
   img
@@ -91,11 +90,15 @@ input[type="submit"]
     margin-left: 10px
 
 .content
-  +box-shadow(black 0 0 10px inset)
   background: url("bg_white.png")
-  padding-top: 3em
-  padding-bottom: 3em
-  margin-bottom: 1.5em
+  .top_bg, .bottom_bg
+    height: 35px
+  .top_bg
+    background: url("bg-header-tile.png")
+    margin-bottom: 20px
+  .bottom_bg
+    background: url("bg-footer-tile.png")
+    margin-top: 20px
 
 .footer
   color: white

@@ -30,7 +30,11 @@
           .fb-like{"data-href" => "http://paznapista.com.br/", "data-send" => "false", "data-show-faces" => "false", "data-layout" => "box_count", "data-width" => "65"}
           #fb-root
 
-    .container.content= yield
+    .content
+      .container.top_bg
+      .container= yield
+      .container.bottom_bg
+
     .container.footer
       .row
         .sixcol
